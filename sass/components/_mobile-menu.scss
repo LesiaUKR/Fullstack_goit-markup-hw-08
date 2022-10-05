@@ -1,0 +1,128 @@
+.menu-btn {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 48px 40px;
+
+  background-color: var(--primary-white-color);
+
+  transform: translateX(100%);
+  transition: transform 400ms;
+
+&.is-open {
+  transform: translateX(0);
+}
+}
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  fill: var(--title-text-color);
+}
+.menu__socials-list {
+  display: flex;
+  margin-right: auto;
+}
+.menu-nav__list {
+  
+  margin-bottom: auto;
+}
+.menu-nav__item {
+  margin-bottom: 32px;
+}
+.menu-nav__item:last-child {
+  margin-bottom: 0px;
+}
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.menu-nav__link--active {
+  color: var(--accent-color);
+}
+.contacts__link--phone {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--accent-color);
+
+  @media screen and (max-width: 479px) {
+    font-weight: 500;
+    font-size: 26px;
+  }
+}
+.menu__contacts-link {
+  display: block;
+  margin-bottom: 64px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.menu__socials-item {
+padding-right: 10px;
+padding-left: 10px;
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+&:first-child {
+  padding-left: 0;
+}
+&:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+}
+.menu__socials-link {
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+  }
+}

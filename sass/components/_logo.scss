@@ -6,10 +6,14 @@
     line-height: 1.19;
   }
   .header__logo {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+    // display: block;
+    // padding-top: 16px;
+    // padding-bottom: 16px;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
   .logo__accent--blue {
     font-family: Raleway, sans-serif;
@@ -19,9 +23,19 @@
     line-height: 1.19;
   }
   .footer__logo {
-    display: block;
+    display: inline-flex;
     padding-top: 0px;
     padding-bottom: 20px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+    justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+    display: block;
+    margin: 0px;
+    }
   }
