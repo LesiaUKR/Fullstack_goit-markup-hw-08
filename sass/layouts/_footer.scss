@@ -56,12 +56,12 @@
   align-items: center;
 
   @media screen and (min-width: 1200px) {
-    align-items: flex-start;
-    justify-content: baseline;
+    align-items: baseline;
     margin-left: auto;
   }
 }
 .footer__subscribe-title {
+  display: flex;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -74,12 +74,16 @@
 }
 .footer__subscribe-form {
   display: flex;
-  // flex-direction: column;
+  flex-direction: column;
   width: 100%;
 
   @media screen and (min-width: 768px) and (max-width: 1199px){
     align-items: center;
    }
+   @media screen and (min-width: 1200px){
+    flex-direction: row;
+   }
+
 }
 .footer__subscribe-group {
   display: flex;
