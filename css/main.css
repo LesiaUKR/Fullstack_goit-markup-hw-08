@@ -1044,6 +1044,9 @@ body {
   padding-bottom: 94px;
 }
 
+.portfolio__projects-list {
+  gap: 30px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__projects-list {
     display: -webkit-box;
@@ -1077,7 +1080,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
-  margin-bottom: 0;
 }
 .portfolio__projects-item:last-child {
   margin-bottom: 0;
@@ -1087,13 +1089,14 @@ body {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     gap: 30px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__projects-item {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
-    gap: 30px;
+    margin-bottom: 0;
   }
 }
 
